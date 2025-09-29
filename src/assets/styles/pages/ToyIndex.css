@@ -1,0 +1,127 @@
+.toy-index {
+  padding: 1rem;
+}
+
+.toy-index h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* כותרת רשימת הצעצועים */
+.toy-list-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0 1.5rem;
+  color: #222;
+  position: relative;
+}
+
+.toy-list-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #4a6cf7;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.sort-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.sort-controls button {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  background: #f7f7f7;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sort-controls button:hover {
+  background: #e0e0e0;
+}
+
+.sort-controls button.active {
+  background: #4a6cf7;
+  color: #fff;
+  border-color: #4a6cf7;
+  box-shadow: 0 0 6px rgba(74, 108, 247, 0.3);
+}
+
+.toy-index-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.toy-index .btn-add {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a6cf7;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.toy-index .btn-add:hover {
+  background-color: #3a5bd8;
+  transform: translateY(-2px);
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  padding: 0.8rem;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.pagination-controls span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.pagination-controls button {
+  border: 1px solid #4a6cf7;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  background: #4a6cf7;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 90px;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  background: #3a5bd8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pagination-controls button:disabled {
+  background: #e0e0e0;
+  color: #999;
+  border-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}

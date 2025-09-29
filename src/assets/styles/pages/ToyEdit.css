@@ -1,0 +1,64 @@
+.toy-edit {
+  background: #fff;
+  padding: 2rem;
+  max-width: 640px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.toy-edit form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.toy-edit label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.toy-edit input,
+.toy-edit select,
+.toy-edit textarea {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.toy-edit input:focus,
+.toy-edit select:focus,
+.toy-edit textarea:focus {
+  outline: none;
+  border-color: #4a6cf7;
+  box-shadow: 0 0 6px rgba(74, 108, 247, 0.3);
+}
+
+.labels-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.6rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.label-option {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 400;
+  background: #f9f9f9;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.label-option:hover {
+  background: #f0f4ff;
+}
+
+.label-option input[type="checkbox"] {
+  accent-color: #4a6cf7;
+}

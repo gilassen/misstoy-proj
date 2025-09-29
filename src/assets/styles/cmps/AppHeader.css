@@ -1,0 +1,28 @@
+.app-header {
+  background: linear-gradient(135deg, #4a6cf7, #5c6bc0);
+  color: white;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  transition: transform 0.2s ease;
+}
+
+.app-header h1:hover {
+  transform: scale(1.02);
+}
+
+.app-header h3 {
+  margin-top: 0.6rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  opacity: 0.85;
+}

@@ -1,0 +1,70 @@
+.toy-details {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.toy-details h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.toy-details h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.toy-details h4,
+.toy-details p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.toy-details img {
+  max-width: 300px;
+  border-radius: 10px;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* כפתורים */
+.toy-details button {
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #0077ff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.toy-details button:hover:not(:disabled) {
+  background-color: #005fd1;
+  transform: translateY(-2px);
+}
+
+.toy-details button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.toy-details .toy-nav {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
