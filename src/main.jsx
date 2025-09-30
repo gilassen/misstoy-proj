@@ -10,7 +10,7 @@ import { RootCmp } from './RootCmp.jsx'
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-      <Router>
+      <Router basename="/misstoy-proj">
         <RootCmp />
       </Router>
     </Provider>

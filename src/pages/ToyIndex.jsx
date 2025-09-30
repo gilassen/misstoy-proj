@@ -67,16 +67,20 @@ export function ToyIndex() {
 
     return (
     <section className="toy-index">
-        <div className="toy-index-header">
-            <h2>Filter Toys</h2>
-            <Link to="/toy/edit" className="btn btn-add">
-                Add Toy
-            </Link>
-        </div>
 
         <ToyFilter filterBy={filterBy} onSetFilter={onSetFilter} />
 
-        <h2 className="toy-list-title">Toys List</h2>
+        <div className="toy-list-header">
+            <h2 className="toy-list-title">Toys List</h2>
+        </div>
+        
+        <div className="toy-list-actions">
+            <Link to="/toy/edit" className="btn btn-add">
+            Add Toy
+            </Link>
+            </div>
+
+
 
         <div className="pagination-controls">
             <button

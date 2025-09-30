@@ -17,14 +17,21 @@
 }
 
 .toy-filter h2 {
-  width: 100%;
-  margin: 0 0 0.8rem 0;
-  font-size: 1.4rem;
+  display: inline-block;       
+  text-align: center;
+  margin: 0 0 1rem 0;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #2c2c2c;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 0.4rem;
+  border-bottom: 3px solid #4a6cf7; 
+  padding-bottom: 0.2rem;
 }
+
+.toy-filter {
+  text-align: center; 
+}
+
+
 
 .toy-filter .field {
   display: flex;

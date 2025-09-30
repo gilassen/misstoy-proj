@@ -9,13 +9,18 @@
   color: #333;
 }
 
-/* כותרת רשימת הצעצועים */
-.toy-list-title {
+.toy-list-header {
   text-align: center;
+  margin: 2rem 0 1.5rem;
+  position: relative;
+}
+
+.toy-list-title {
   font-size: 2rem;
   font-weight: 700;
-  margin: 2rem 0 1.5rem;
   color: #222;
+  margin: 0;
+  display: inline-block;
   position: relative;
 }
 
@@ -29,39 +34,10 @@
   border-radius: 2px;
 }
 
-.sort-controls {
+.toy-list-actions {
   display: flex;
-  gap: 0.5rem;
-  margin: 1rem 0;
-}
-
-.sort-controls button {
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  padding: 0.4rem 1rem;
-  background: #f7f7f7;
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.sort-controls button:hover {
-  background: #e0e0e0;
-}
-
-.sort-controls button.active {
-  background: #4a6cf7;
-  color: #fff;
-  border-color: #4a6cf7;
-  box-shadow: 0 0 6px rgba(74, 108, 247, 0.3);
-}
-
-.toy-index-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 .toy-index .btn-add {
