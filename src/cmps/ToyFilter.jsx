@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react"
+import { useState, useMemo, useEffect } from "react"
 import { useEffectUpdate } from "../customHooks/useEffectUpdate.js"
 import { toyService } from "../services/toyService.js"
 
@@ -12,6 +12,10 @@ function debounce(fn, wait) {
 
 export function ToyFilter({ filterBy, onSetFilter }) {
   const [filterByToEdit, setFilterByToEdit] = useState(filterBy)
+
+  useEffect(() => {
+    setFilterByToEdit(filterBy)
+  }, [filterBy])
 
   const debouncedSetFilter = useMemo(
     () => debounce(onSetFilter, 400),
@@ -55,6 +59,7 @@ export function ToyFilter({ filterBy, onSetFilter }) {
     ev.preventDefault()
     const defaultFilter = toyService.getDefaultFilter()
     setFilterByToEdit(defaultFilter)
+    onSetFilter(defaultFilter) 
   }
 
   function onSubmitFilter(ev) {
@@ -134,14 +139,10 @@ export function ToyFilter({ filterBy, onSetFilter }) {
         </div>
 
         <div className="actions">
-          <button
-      type="button"
-      className="btn-clear"
-      onClick={onClear}
-    >
-      Clear
-    </button>
-  </div>
+          <button type="button" className="btn-clear" onClick={onClear}>
+            Clear
+          </button>
+        </div>
       </form>
     </section>
   )

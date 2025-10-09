@@ -26,7 +26,7 @@ export function ToyEdit() {
     } else {
       setToyToEdit(toyService.getEmptyToy())
     }
-  }, [params.toyId, toys])
+  }, [params.toyId])
 
   useConfirmTabClose(!!toyToEdit, "You have unsaved changes, are you sure you want to leave?")
 

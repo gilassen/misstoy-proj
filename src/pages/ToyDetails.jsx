@@ -22,7 +22,7 @@ export function ToyDetails() {
                     navigate("/toy")
                 })
         }
-    }, [toyId, toy, navigate])
+    }, [toyId])
 
     useKeyListener("Escape", () => navigate("/toy"))
     useKeyListener("ArrowLeft", () => {
